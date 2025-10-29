@@ -1,0 +1,133 @@
+.header-layout {
+    overflow-x: auto; 
+}
+
+.header { 
+    background-color: #ffffff;
+    color: #e7e7e7;
+    padding: 15px 20px;
+    height: 60px;
+    box-shadow: 10px 8px #00000000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.904); 
+    margin-bottom: 5px;
+    justify-content: space-between
+}
+
+.block1 {
+    display: flex;
+    align-items: center;
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    /* margin-right: 80px; */
+}
+
+
+.menu {
+    width: 45px;
+    height: 45px;
+    background-color: #3B61CB;
+    margin-right: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.904); 
+    border-radius: 10px;          
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+    gap: 3px;
+    flex-shrink: 0;
+}       
+
+.sen {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_Bk {
+    width: 80px;
+    height: 48px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.tutor {  
+    margin: 0;
+    font-size: 25px;
+    color: #294cac;
+    margin-top: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+.DKMentor {
+    width: 170px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.904); 
+    border: 2px solid #3B61CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}   
+
+.DKMentor:hover {
+  transform: scale(0.95);
+}
+
+.letterDK {
+    font-size: 14px;
+    color: #294cac;
+}
+
+.letterDN {
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+.DN {
+    cursor: pointer;
+    width: 130px;
+    height: 45px;
+    background-color: #3B61CB;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.904); 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.DN:hover {
+  transform: scale(0.95);
+}
+
+.DX {
+    cursor: pointer;
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.904); 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    transition: transform 0.1s ease
+}
+
+.DX:hover {
+  transform: scale(0.95);
+}

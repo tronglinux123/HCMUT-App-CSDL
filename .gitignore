@@ -1,0 +1,52 @@
+#--------------------------------------
+# TEX FILES (Artifacts tu bien dich LaTeX)
+#--------------------------------------
+*.aux
+*.bcf
+*.log
+*.lot
+*.out
+*.run.xml
+*.toc
+
+#--------------------------------------
+# IDE & EDITOR FILES
+#--------------------------------------
+# Visual Studio Code
+.vscode/
+
+#--------------------------------------
+# NODE.JS MODULES (Quan trọng nhat)
+#--------------------------------------
+# Bo qua tat ca cac thu muc node_modules trong du an
+**/node_modules/
+
+#--------------------------------------
+# BUILD & CACHE ARTIFACTS (Vite/Bundlers)
+#--------------------------------------
+# Bo qua thu muc cache cua Vite
+.vite/
+# Cac thu muc dau ra cua Front-end (client/dist/) va Back-end (neu co)
+dist/
+build/
+
+#--------------------------------------
+# ENVIRONMENT FILES (Biến môi trường)
+#--------------------------------------
+# KHONG BAO GIO commit cac file chua keys/secrets
+.env
+.env.local
+.env.*.local
+
+#--------------------------------------
+# LOGS
+#--------------------------------------
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+#--------------------------------------
+# OS FILES
+#--------------------------------------
+.DS_Store
+Thumbs.db

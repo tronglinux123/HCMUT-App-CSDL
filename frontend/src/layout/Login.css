@@ -1,0 +1,168 @@
+.login {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to bottom, hsl(212, 100%, 50%), #c0ddff);
+}
+
+.square_login {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.square_login.move {
+  transform: translate(-120%, -50%);
+}
+
+.logo_login{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.tutor_login {  
+    font-size: 25px;
+    color: #294cac;
+    margin-top: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+    margin-bottom: 40px;
+}
+
+.email, .pass, .name, .email_dk, .pass_dk, .pass_confirm, .phone {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.email_img, .name_img, .phone_img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.pass_img {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.login_buttom, .dk_button {
+    background-color: #3B61CB;
+    width: 350px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;  
+}
+
+.login_buttom {
+    top: 240px;
+    position: absolute; 
+}
+
+.login_buttom:active, .dk_button:active {
+  transform: scale(0.95);
+  background-color: #0056b3;
+}
+
+.login_word {
+    font-size: 15px;
+}
+
+.dk_buttom {
+    background-color: #910e0e;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;  
+    top: 350px;
+    position: absolute; 
+}
+
+.dk_buttom:active {
+  transform: scale(0.95);
+  background-color: #610202;
+}
+
+.dk_word {
+    font-size: 15px;
+}
+
+.email_input, .pass_input, .name_input, .email_dk_input, .pass_dk_input, .pass_confirm_input, .phone_input {
+    background-color: white;
+    color: black;
+    width: 280px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.square_dk {
+    height: 700px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    top: 50%;
+    left: 120%;
+    position: absolute;
+    
+}
+
+.square_dk.move {
+  transform: translate(-240%, -50%);
+  opacity: 1;
+}
+
+.errorr {
+    margin-left: 5px;
+}
+
+.dk_button {
+    top: 470px;
+    position: absolute; 
+}
+
+.message-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    top: 30px; 
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+/* Thêm đoạn này vào đầu phần CSS của bạn */
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: #f7f9fc; 
+    overflow-y: auto; 
+
+}
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f9fc;
+}

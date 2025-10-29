@@ -1,0 +1,30 @@
+.admin {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #0077FF, #c0ddff);
+    display: flex; 
+    align-items: center;
+    justify-content: center
+}
+
+.ApplicationCheckByAdmin, .ApplyForMentor {
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 800px;  
+    width: 600px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.664);
+    font-size: 7px;
+    
+}
+
+.ApplyCard {
+    display: flex; 
+    justify-content: space-between;
+    height: 200px;
+    width: 600px;
+    border: #000000;
+    border-radius: 10px;
+
+}
