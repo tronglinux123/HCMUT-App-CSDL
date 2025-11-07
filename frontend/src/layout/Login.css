@@ -21,7 +21,7 @@
     position: absolute;
 }
 
-.square_login.move {
+.square_login.move, .square_login.movementor {
   transform: translate(-120%, -50%);
 }
 
@@ -40,14 +40,14 @@
     margin-bottom: 40px;
 }
 
-.email, .pass, .name, .email_dk, .pass_dk, .pass_confirm, .phone {
+.email, .pass, .name, .email_dk, .pass_dk, .pass_confirm, .phone, .sex, .birthday, .specialized, .job, .yearstudy, .gpa {
     background-color: rgb(255, 255, 255);
     width: 350px;
     height: 50px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .email_img, .name_img, .phone_img {
@@ -64,7 +64,7 @@
     margin-right: 3px;
 }
 
-.login_buttom, .dk_button {
+.login_buttom, .dk_button, .dk_button1 {
     background-color: #3B61CB;
     width: 350px;
     height: 50px;
@@ -82,7 +82,7 @@
     position: absolute; 
 }
 
-.login_buttom:active, .dk_button:active {
+.login_buttom:active, .dk_button:active, .dk_button1:active {
   transform: scale(0.95);
   background-color: #0056b3;
 }
@@ -91,9 +91,20 @@
     font-size: 15px;
 }
 
-.dk_buttom {
-    background-color: #910e0e;
+.dk_dkmentor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 350px;
+    height: 100px;
+    /* background-color: black; */
+    top: 320px;
+    position: absolute;
+}
+
+.dkmentor_buttom, .dk_buttom {
+    background-color: #910e0e;
+    width: 165px;
     height: 50px;
     border-radius: 10px;   
     display: flex;
@@ -101,11 +112,11 @@
     align-items: center;
     cursor: pointer;
     transition: transform 0.1s ease, background-color 0.2s ease;  
-    top: 350px;
-    position: absolute; 
+    /* top: 350px; */
+    /* position: absolute;  */
 }
 
-.dk_buttom:active {
+.dk_buttom:active, .dkmentor_buttom:active {
   transform: scale(0.95);
   background-color: #610202;
 }
@@ -114,7 +125,7 @@
     font-size: 15px;
 }
 
-.email_input, .pass_input, .name_input, .email_dk_input, .pass_dk_input, .pass_confirm_input, .phone_input {
+.email_input, .pass_input, .name_input, .email_dk_input, .pass_dk_input, .pass_confirm_input, .phone_input, .sex_input, .birthday_input, .specialized_input, .job_input, .yearstudy_input, .gpa_input {
     background-color: white;
     color: black;
     width: 280px;
@@ -125,7 +136,7 @@
 }
 
 .square_dk {
-    height: 700px;
+    height: 680px;
     width: 500px;
     background-color: rgba(255, 255, 255, 0.664);
     border-radius: 20px;
@@ -138,11 +149,26 @@
     top: 50%;
     left: 120%;
     position: absolute;
-    
 }
 
-.square_dk.move {
-  transform: translate(-240%, -50%);
+.square_dkmentors {
+    height: 930px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    top: 50%;
+    left: 120%;
+    position: absolute;
+}
+
+.square_dk.move, .square_dkmentors.movementor {
+  transform: translate(-200%, -50%);
   opacity: 1;
 }
 
@@ -151,7 +177,12 @@
 }
 
 .dk_button {
-    top: 470px;
+    top: 540px;
+    position: absolute; 
+}
+
+.dk_button1 {
+    top: 800px;
     position: absolute; 
 }
 
@@ -163,6 +194,13 @@
     display: flex;
     justify-content: center;
     width: 30%;
-    background-color: rgba(255, 255, 255, 0.664);
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.925);
+    border-radius: 20px;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 1;
+}
+
+.message-box.hidden {
+    opacity: 0;
+    transform: translate(-50%, -10px); 
 }

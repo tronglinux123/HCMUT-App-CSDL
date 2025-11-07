@@ -1,5 +1,6 @@
 .header-layout {
     overflow-x: auto; 
+    overflow: visible;
 }
 
 .header { 
@@ -10,9 +11,9 @@
     box-shadow: 10px 8px #00000000;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.904); 
     margin-bottom: 5px;
-    justify-content: space-between
 }
 
 .block1 {
@@ -25,7 +26,6 @@
     align-items: center;
     /* margin-right: 80px; */
 }
-
 
 .menu {
     width: 45px;
@@ -115,6 +115,59 @@
 .DN:hover {
   transform: scale(0.95);
 }
+
+.avt-container {
+  position: relative;
+  display: inline-block;
+}
+
+.avt {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.avtimg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: 0.3s;
+}
+
+.avtimg:hover {
+  border-color: #007bff;
+}
+
+/* menu dropdown */
+.menuavt {
+  position: absolute;
+  top: 55px;              /* nằm dưới avatar */
+  right: 0;               /* canh bên phải */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  width: 250px;
+  z-index: 100;
+}
+
+.menuavt li {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: black;
+}
+
+.menuavt li:hover {
+  background-color: #f0f0f0;
+  /* color: black; */
+}
+
 
 .DX {
     cursor: pointer;

@@ -1,7 +1,7 @@
 .main-layout {
     height: calc(100vh - 60px); 
     display: grid;
-    grid-template-columns: 250px 1fr; 
+    grid-template-columns: 260px 1fr; 
 }
 
 .content {
@@ -32,9 +32,10 @@
     border-radius: 15px;
     margin-bottom: 15px; 
     position: relative; 
-    width: 190px;
+    width: 200px;
     margin-left: 9px;
 }
+
 
 .menu-name {
     color: white; 
@@ -47,7 +48,7 @@
 .sidebar-item.active {
     background-color: #ffffff; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
-    width: 190px;
+    width: 200px;
     margin-left: 9px;
 }
 

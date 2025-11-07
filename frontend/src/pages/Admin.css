@@ -2,29 +2,172 @@
     min-height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-image: linear-gradient(to bottom, #0077FF, #c0ddff);
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center
+    flex-direction: column;
+    overflow-y: auto;    
 }
 
-.ApplicationCheckByAdmin, .ApplyForMentor {
-    margin-left: 150px;
-    margin-right: 150px;
-    height: 800px;  
-    width: 600px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.664);
-    font-size: 7px;
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* .ApplicationCheckByAdmin {
+    margin-bottom: 10px;
+} */
+.Response {
+    margin-bottom: 15px;
+}
+.ApplicationCheckByAdmin, .ApplyForMentor, .Response {
+    height: 420px;  
+    width: 1780px;
+    /* border: 1px solid transparent;  */
+    /* border-image: linear-gradient(
+        45deg,        
+        #8a2be2,        
+        #00ffff        
+    ) 1;  */
+     margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    position: relative; 
+    color: white;
+    border-radius: 15px; 
+    font-size: 5px;
+    z-index: 10;
+    overflow: hidden;
+    border: 0px solid transparent; 
     
 }
 
-.ApplyCard {
-    display: flex; 
-    justify-content: space-between;
-    height: 200px;
-    width: 600px;
-    border: #000000;
-    border-radius: 10px;
+.title-Apply {
+    height: 10px;  
+    width: 1780px;
+    /* border: 1px solid transparent;  */
+    /* border-image: linear-gradient(
+        45deg,        
+        #8a2be2,        
+        #00ffff        
+    ) 1;  */
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    position: relative; 
+    color: white;
+    border-radius: 15px; 
+    font-size: 7px;
+    z-index: 10;
+    border: 0px solid transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.ApplicationCheckByAdmin::before, .ApplyForMentor::before, .ApplyCard::before, .delete-apply::before, .access-apply::before, .title-Apply::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    background: linear-gradient(
+        45deg,        
+        #8a2be2,        
+        #00ffff        
+    );
+    
+    border-radius: 18px; 
+    padding: 2px; 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.ApplyCard {
+    border: 0px solid transparent; 
+    color: white;
+    z-index: 10;
+    position: relative; 
+    font-size: 5px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1720px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.boc_ApplicationCheckByAdmin {
+    height: 100%; 
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.delete-apply, .access-apply {
+    border: 0px solid transparent; 
+    z-index: 10;
+    position: relative; 
+    width: 50px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.delete-apply {
+    background-color: rgba(255, 60, 60, 0.85);
+}
+
+.access-apply  {
+    background-color: rgba(60, 255, 86, 0.85);
+}
+
+.hoten, .emailapply {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.jobapply {
+    width: 120px;
+    overflow-x: auto;
+}
+
+.specializedapply {
+    width: 110px;
+    overflow-x: auto;
+}
+
+.gpaapply{
+    width: 80px;
+    overflow-x: auto;
+}
+
+.statusapply {
+    width: 70px;
+    overflow-x: auto;
+}
+
+.yearapply {
+    width: 90px;
+    overflow-x: auto;
 }

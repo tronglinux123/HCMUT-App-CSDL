@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logoimg from '../image/logo.webp';
 
-import './DKMentor.css';
+// import './DKMentor.css';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -16,12 +16,14 @@ function DKMentor() {
   const [dkSuccess,setDkSuccess] = useState('');
   const [dkError,setDkError] = useState('');
   const storage_email = localStorage.getItem('emailCurrent');
+  const storage_name = localStorage.getItem('nameCurrent');
   const handleSubmit_mentor = async (e) => {
     e.preventDefault();
     setDkSuccess('');
     setDkError('');
     try {
         const response = await axios.post(`${BACKEND_URL}/api/mentorApplication`,{
+            name: storage_name,
             apply_email: storage_email,
             aplly_job: job,
             specialized: specialized,

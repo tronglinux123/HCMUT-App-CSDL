@@ -41,10 +41,6 @@ const MentorApplyRoute = ({ children }) => {
                 const response = await axios.post(`${BACKEND_URL}/api/ApplicationCheck`,{
                     email: storage_email
                 });
-                const job = response.data.user.job;
-                const specialized = response.data.user.specialized;
-                const yearstudy = response.data.user.yearstudy;
-                const gpa = response.data.user.gpa;
                 const status = response.data.user.status;
                 setApplicationStatus(status); 
             } catch (error) {
@@ -86,7 +82,7 @@ const MentorApplyRoute = ({ children }) => {
         );
     }
     
-    if (applicationStatus === 'no_fault'){
+    if (applicationStatus === 'no_fault' || applicationStatus === 'rejected'){
         return children ? children : <Outlet />;
     }
     
